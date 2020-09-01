@@ -1,7 +1,7 @@
 {
   "name": "ssb-discover-lan-peers",
   "version": "1.0.0",
-  "description": "",
+  "description": "auto discover ssb-servers on the local network (the counterpart to ssb-lan)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,9 +12,14 @@
   },
   "keywords": [],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/regular/ssb-discover-lan-peers/issues"
   },
-  "homepage": "https://github.com/regular/ssb-discover-lan-peers#readme"
+  "homepage": "https://github.com/regular/ssb-discover-lan-peers#readme",
+  "dependencies": {
+    "pull-stream": "^3.6.14",
+    "pull-through-end": "^1.0.0",
+    "ssb-lan": "^0.2.0"
+  }
 }
